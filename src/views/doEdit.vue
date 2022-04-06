@@ -29,7 +29,7 @@
             <el-upload
               class="upload-demo"
               drag
-              action="http://192.168.1.103:3012/file/upload"
+              action="http:www.fjtbkyc.net:3000/file/upload"
               :file-list="fileList"
               :show-file-list="true"
               :multiple="false"

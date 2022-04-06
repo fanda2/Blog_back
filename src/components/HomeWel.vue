@@ -72,7 +72,7 @@
           <el-menu-item index="1-5" class="el-icon-s-finance"
             >友链管理</el-menu-item
           >
-          <el-menu-item index="1-6" class="el-icon-s-flag"
+          <el-menu-item index="aboutme" class="el-icon-s-flag"
             >关于本站</el-menu-item
           >
           <el-menu-item index="1-7" class="el-icon-s-data"

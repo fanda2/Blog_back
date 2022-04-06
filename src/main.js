@@ -29,8 +29,6 @@ axios.interceptors.request.use((config) => {
 axios.interceptors.response.use((response) => {
     return response.data
 })
-
-
 Vue.prototype.openLoading = function() {
     const loading = this.$loading({
         // 声明一个loading对象

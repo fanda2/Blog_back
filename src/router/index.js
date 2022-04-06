@@ -41,9 +41,9 @@ const routes = [{
                     import ("../components/myWelcom.vue"),
             },
             {
-                path: "/1-6",
+                path: "/aboutme",
                 component: () =>
-                    import ("../components/myWelcom.vue"),
+                    import ("../views/aboutMyblog.vue"),
             },
             {
                 path: "/1-7",

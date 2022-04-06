@@ -118,7 +118,7 @@
             <el-upload
               class="upload-demo"
               drag
-              action="https://jsonplaceholder.typicode.com/posts/"
+              action="http:www.fjtbkyc.net:3000/file/upload"
               :file-list="fileList"
               :show-file-list="true"
               :multiple="false"
@@ -193,21 +193,22 @@ export default {
       this.previewpic = url;
       this.dialogVisible = true;
     },
-    //获取文章信息
-    async getOne() {
-      //返回顶部
-      backTop();
-      var result = await this.$http.get("/post/post_byId", {
-        params: {
-          postid: this.postid,
-        },
-      });
-      if (result.status == 200) {
-        this.form = result.data.row2;
-      } else {
-        this.$Message.error("请检查网络或稍后重试");
-      }
-    },
+
+    // //获取文章信息
+    // async getOne() {
+    //   //返回顶部
+    //   backTop();
+    //   var result = await this.$http.get("/post/post_byId", {
+    //     params: {
+    //       postid: this.postid,
+    //     },
+    //   });
+    //   if (result.status == 200) {
+    //     this.form = result.data.row2;
+    //   } else {
+    //     this.$Message.error("请检查网络或稍后重试");
+    //   }
+    // },
      //获取文章信息
     async getOne() {
       var result = await this.$http.get("/post/post_byId", {
